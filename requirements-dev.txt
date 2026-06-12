@@ -1,0 +1,7 @@
+# Training + testing on top of the runtime deps.
+-r requirements.txt
+scikit-learn>=1.4
+pandas>=2.2
+ucimlrepo>=0.0.7
+pytest>=8.0
+httpx>=0.27

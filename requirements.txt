@@ -1,0 +1,5 @@
+# Runtime (serving) dependencies only — what the Docker image needs.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+xgboost>=2.1
+numpy>=1.26

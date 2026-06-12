@@ -1,0 +1,126 @@
+{
+  "auc_roc": 0.7689,
+  "auc_pr": 0.5355,
+  "n_train": 24000,
+  "n_test": 6000,
+  "n_features": 11,
+  "positive_rate": 0.2212,
+  "default_threshold": 0.5,
+  "trained_on": "2026-06-12",
+  "threshold_curve": [
+    {
+      "threshold": 0.05,
+      "approval_rate": 0.0105,
+      "recall": 0.9992,
+      "precision": 0.2233
+    },
+    {
+      "threshold": 0.1,
+      "approval_rate": 0.0477,
+      "recall": 0.9925,
+      "precision": 0.2305
+    },
+    {
+      "threshold": 0.15,
+      "approval_rate": 0.105,
+      "recall": 0.9766,
+      "precision": 0.2413
+    },
+    {
+      "threshold": 0.2,
+      "approval_rate": 0.1805,
+      "recall": 0.9578,
+      "precision": 0.2585
+    },
+    {
+      "threshold": 0.25,
+      "approval_rate": 0.258,
+      "recall": 0.9186,
+      "precision": 0.2738
+    },
+    {
+      "threshold": 0.3,
+      "approval_rate": 0.3527,
+      "recall": 0.8719,
+      "precision": 0.2979
+    },
+    {
+      "threshold": 0.35,
+      "approval_rate": 0.4545,
+      "recall": 0.8109,
+      "precision": 0.3288
+    },
+    {
+      "threshold": 0.4,
+      "approval_rate": 0.547,
+      "recall": 0.7445,
+      "precision": 0.3635
+    },
+    {
+      "threshold": 0.45,
+      "approval_rate": 0.6412,
+      "recall": 0.6654,
+      "precision": 0.4101
+    },
+    {
+      "threshold": 0.5,
+      "approval_rate": 0.7083,
+      "recall": 0.6059,
+      "precision": 0.4594
+    },
+    {
+      "threshold": 0.55,
+      "approval_rate": 0.7535,
+      "recall": 0.5561,
+      "precision": 0.499
+    },
+    {
+      "threshold": 0.6,
+      "approval_rate": 0.7948,
+      "recall": 0.5057,
+      "precision": 0.5451
+    },
+    {
+      "threshold": 0.65,
+      "approval_rate": 0.8237,
+      "recall": 0.4582,
+      "precision": 0.5747
+    },
+    {
+      "threshold": 0.7,
+      "approval_rate": 0.8482,
+      "recall": 0.4152,
+      "precision": 0.6048
+    },
+    {
+      "threshold": 0.75,
+      "approval_rate": 0.8702,
+      "recall": 0.3768,
+      "precision": 0.6418
+    },
+    {
+      "threshold": 0.8,
+      "approval_rate": 0.891,
+      "recall": 0.3308,
+      "precision": 0.6713
+    },
+    {
+      "threshold": 0.85,
+      "approval_rate": 0.9087,
+      "recall": 0.2901,
+      "precision": 0.7026
+    },
+    {
+      "threshold": 0.9,
+      "approval_rate": 0.9483,
+      "recall": 0.1726,
+      "precision": 0.7387
+    },
+    {
+      "threshold": 0.95,
+      "approval_rate": 0.9975,
+      "recall": 0.0098,
+      "precision": 0.8667
+    }
+  ]
+}

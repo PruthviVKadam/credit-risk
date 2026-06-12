@@ -1,0 +1,106 @@
+{
+  "features": [
+    {
+      "name": "LIMIT_BAL",
+      "label": "Credit limit (NT$)",
+      "min": 10000.0,
+      "max": 1000000.0,
+      "default": 140000.0,
+      "step": 1000,
+      "help": ""
+    },
+    {
+      "name": "AGE",
+      "label": "Age (years)",
+      "min": 21.0,
+      "max": 79.0,
+      "default": 34.0,
+      "step": 1,
+      "help": ""
+    },
+    {
+      "name": "PAY_0",
+      "label": "Repayment status \u2014 last month",
+      "min": -2.0,
+      "max": 8.0,
+      "default": 0.0,
+      "step": 1,
+      "help": "-2/-1/0 = paid on time or no balance; 1-9 = months of payment delay."
+    },
+    {
+      "name": "PAY_2",
+      "label": "Repayment status \u2014 2 months ago",
+      "min": -2.0,
+      "max": 8.0,
+      "default": 0.0,
+      "step": 1,
+      "help": "-2/-1/0 = paid on time or no balance; 1-9 = months of payment delay."
+    },
+    {
+      "name": "PAY_3",
+      "label": "Repayment status \u2014 3 months ago",
+      "min": -2.0,
+      "max": 8.0,
+      "default": 0.0,
+      "step": 1,
+      "help": "-2/-1/0 = paid on time or no balance; 1-9 = months of payment delay."
+    },
+    {
+      "name": "BILL_AMT1",
+      "label": "Most recent bill (NT$)",
+      "min": -165580.0,
+      "max": 964511.0,
+      "default": 22381.5,
+      "step": 1000,
+      "help": ""
+    },
+    {
+      "name": "PAY_AMT1",
+      "label": "Most recent payment (NT$)",
+      "min": 0.0,
+      "max": 873552.0,
+      "default": 2100.0,
+      "step": 1000,
+      "help": ""
+    },
+    {
+      "name": "PAY_AMT2",
+      "label": "Payment \u2014 2 months ago (NT$)",
+      "min": 0.0,
+      "max": 1684259.0,
+      "default": 2009.0,
+      "step": 1000,
+      "help": ""
+    },
+    {
+      "name": "EDUCATION",
+      "label": "Education (1 grad \u2026 4 other)",
+      "min": 0.0,
+      "max": 6.0,
+      "default": 2.0,
+      "step": 1,
+      "help": ""
+    },
+    {
+      "name": "MARRIAGE",
+      "label": "Marital status (1 married, 2 single, 3 other)",
+      "min": 0.0,
+      "max": 3.0,
+      "default": 2.0,
+      "step": 1,
+      "help": ""
+    },
+    {
+      "name": "SEX",
+      "label": "Sex (1 male, 2 female)",
+      "min": 1.0,
+      "max": 2.0,
+      "default": 2.0,
+      "step": 1,
+      "help": ""
+    }
+  ],
+  "target": "probability of default next month",
+  "model": "xgboost binary:logistic",
+  "source": "UCI Default of Credit Card Clients (id 350)"
+}
