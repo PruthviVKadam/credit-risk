@@ -1,3 +1,13 @@
+---
+title: Credit Risk Scorer
+emoji: 💳
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 💳 Credit Risk Scorer
 
 An interactive credit-default model that explains **every** decision. Move the sliders and
