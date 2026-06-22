@@ -29,6 +29,18 @@ at your chosen threshold.
 - **Result:** A deployable scoring API where you can see *why* each decision was made and *what
   it costs* to move the threshold — not just an accuracy number.
 
+## Insights
+
+- **AUC is the least interesting number.** 0.7689 is ordinary; the value is the **threshold curve** —
+  at 0.30 you catch 87% of defaulters but approve only 35% of applicants; at 0.70 you approve 85% but
+  catch 42%. Picking a threshold is a *business* decision, and the app makes that trade-off explicit
+  instead of hiding it behind one accuracy figure.
+- **With a 22% default base rate, accuracy lies.** A "78%-accurate" model that approves everyone is
+  useless — which is why this reports **AUC-PR (0.5355)** and a recall/precision curve, not accuracy.
+- **Explainability has to be per-decision.** Native TreeSHAP returns the contributions behind *this*
+  applicant's score (summing in log-odds to the model margin) — what an adjudicator or a regulator
+  actually asks for, not a global feature-importance chart.
+
 ## Model performance (held-out test, copied from `train.py` output)
 
 - **AUC-ROC: 0.7689** · **AUC-PR: 0.5355** on 6,000 held-out applicants (24,000 train).
